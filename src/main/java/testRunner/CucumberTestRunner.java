@@ -7,11 +7,11 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "/2021CucumberSeleniumPractice/src/main/java/features",
-		glue ="stepdefinitions",
+		features = { "/2021CucumberSeleniumPractice/src/main/java/features/youtube.feature"},
+		glue ={"stepdefinitions"},
 		monochrome=true,
-		dryRun=true,
-		tags={"@Smoke","@Regression"},
+		dryRun=false,
+		//tags={"@Smoke","@Regression"},
 		plugin= {"pretty","html:test-output"}
 		
 				

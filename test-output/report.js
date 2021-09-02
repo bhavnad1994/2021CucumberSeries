@@ -1,126 +1,168 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("loginfeature.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/2021CucumberSeleniumPractice/src/main/java/features/youtube.feature");
 formatter.feature({
   "line": 1,
-  "name": "herokuapp App Add/Remove Elements functionality",
+  "name": "Youtube channel name validation",
   "description": "",
-  "id": "herokuapp-app-add/remove-elements-functionality",
+  "id": "youtube-channel-name-validation",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "line": 14,
-  "name": "Add/Remove Elements functionality1 testing scenario",
+formatter.scenarioOutline({
+  "line": 2,
+  "name": "Youtube channel name validations",
   "description": "",
-  "id": "herokuapp-app-add/remove-elements-functionality;add/remove-elements-functionality1-testing-scenario",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 13,
-      "name": "@Smoke"
-    },
-    {
-      "line": 13,
-      "name": "@Regression"
-    }
-  ]
+  "id": "youtube-channel-name-validation;youtube-channel-name-validations",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 15,
-  "name": "User already on landing Page",
+  "line": 3,
+  "name": "Open Chrome browser with URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 16,
-  "name": "user clicks on Add/Remove Elements link",
+  "line": 4,
+  "name": "Search selenium tutorial \"\u003cSearchString\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 17,
-  "name": "user lands on Add/Remove Elements page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user click two times on Add element button",
+  "line": 5,
+  "name": "Click enter",
   "keyword": "And "
 });
-formatter.step({
-  "line": 19,
-  "name": "two Delete buttons are displayed",
-  "keyword": "Then "
+formatter.examples({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "id": "youtube-channel-name-validation;youtube-channel-name-validations;",
+  "rows": [
+    {
+      "cells": [
+        "SearchString"
+      ],
+      "line": 8,
+      "id": "youtube-channel-name-validation;youtube-channel-name-validations;;1"
+    },
+    {
+      "cells": [
+        "selenium by bakkappa n"
+      ],
+      "line": 9,
+      "id": "youtube-channel-name-validation;youtube-channel-name-validations;;2"
+    },
+    {
+      "cells": [
+        "selenium webdriver by bakkappa n"
+      ],
+      "line": 10,
+      "id": "youtube-channel-name-validation;youtube-channel-name-validations;;3"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 9,
+  "name": "Youtube channel name validations",
+  "description": "",
+  "id": "youtube-channel-name-validation;youtube-channel-name-validations;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 20,
-  "name": "user clicks on one Delete button",
+  "line": 3,
+  "name": "Open Chrome browser with URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 4,
+  "name": "Search selenium tutorial \"selenium by bakkappa n\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 5,
+  "name": "Click enter",
   "keyword": "And "
 });
-formatter.step({
-  "line": 21,
-  "name": "one Delete button is un-displayed and another Delete button is still displayed",
-  "keyword": "Then "
+formatter.match({
+  "location": "Youtube.open_Chrome_browser_with_URL()"
+});
+formatter.result({
+  "duration": 11041059100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "selenium by bakkappa n",
+      "offset": 26
+    }
+  ],
+  "location": "Youtube.search_selenium_tutorial(String)"
+});
+formatter.result({
+  "duration": 1133474900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Youtube.click_enter()"
+});
+formatter.result({
+  "duration": 1803120700,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 10,
+  "name": "Youtube channel name validations",
+  "description": "",
+  "id": "youtube-channel-name-validation;youtube-channel-name-validations;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 22,
-  "name": "user again click on delete button",
+  "line": 3,
+  "name": "Open Chrome browser with URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 4,
+  "name": "Search selenium tutorial \"selenium webdriver by bakkappa n\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 5,
+  "name": "Click enter",
   "keyword": "And "
 });
-formatter.step({
-  "line": 23,
-  "name": "All delete button is un-displayed",
-  "keyword": "And "
-});
 formatter.match({
-  "location": "AddRemoveElement.user_already_on_landing_Page()"
+  "location": "Youtube.open_Chrome_browser_with_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13864934000,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddRemoveElement.user_clicks_on_Add_Remove_Elements_link()"
+  "arguments": [
+    {
+      "val": "selenium webdriver by bakkappa n",
+      "offset": 26
+    }
+  ],
+  "location": "Youtube.search_selenium_tutorial(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1152486900,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddRemoveElement.user_lands_on_Add_Remove_Elements_page()"
+  "location": "Youtube.click_enter()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AddRemoveElement.user_click_two_times_on_Add_element_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AddRemoveElement.two_Delete_buttons_are_displayed()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AddRemoveElement.user_clicks_on_one_Delete_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AddRemoveElement.one_Delete_button_is_un_displayed_and_another_Delete_button_is_still_displayed()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AddRemoveElement.user_again_click_on_delete_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "AddRemoveElement.all_delete_button_is_un_displayed()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 1815181500,
+  "status": "passed"
 });
 });

@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -97,7 +100,8 @@ public void user_again_click_on_delete_button() throws Throwable {
 
 @Then("^All delete button is un-displayed$")
 public void all_delete_button_is_un_displayed() throws Throwable {
-   driver.close();
+  System.out.println("no deleet button displayed");
+  driver.quit();
 }
 
 }

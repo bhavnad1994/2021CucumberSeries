@@ -11,7 +11,6 @@ Then one Delete button is displayed
 And user click on Delete button
 Then Delete button is un-displayed
 
-
 Scenario: verify multiple Add/Remove Elements functionality
 And user click two times on Add element button
 Then two Delete buttons are displayed
